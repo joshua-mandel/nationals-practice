@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Poppins:wght@200&display=swap');
+
+*{
+  box-sizing: border-box;
+  font-family: 'Beau Rivage', cursive;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: url(images/tesla-background.jpg)
+  no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.logo{
+  max-height: 50px;
+  width: auto;
+}
+
+nav{
+  flex-basis: 25%;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+}
+
+.logo-box{
+  display: flex;
+  align-items: center;
+}
+
+.active-link{
+  color: rgb(80, 77, 77);
+}
+
+a:link, a:visited{
+  text-decoration: none;
+}
+
+a:hover{
+  color: darkred;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-link{
+  text-decoration: none;
+  font-size: 1.25em;
+}
+
+h1{
+  font-size: 2.5em;
+  margin-left: 20px;
+}
+
+h3{
+  font-size: 5.5em;
+  font-weight: 500;
+}
+
+.main-text-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-box{
+  display: flex;
+  justify-content: space-around;
+}
+
+/* CSS */
+button {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  flex-basis: 20%;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-position: -20px -20px;
+}
+
+button:focus:not(:active) {
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+#learnmore{
+  background-color:#FFFFFF;
+}
+
+.space-home{
+  height: 400px;
+}
+
+@media screen and (max-width: 800px) {
+  nav{
+    flex-direction: column;
+  }
+
+  h1{
+    font-size: 1.5em;
+  }
+
+  h3{
+    font-size:2em;
+    margin-top: 100px;
+  }
+
+  .button-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
